@@ -23,9 +23,9 @@ class Factory {
     this.makeIn = 'USA';
     this.abs = true;
     this.warranty = '60,000 miles / 3 years',
-    this.massBuild = function (quantity) {
+    this.massBuild = (quantity) => {
     return `Building ${quantity}, ${this.model}, ${this.trim}, ${this.color}`}
-    this.customerBuild = function (quantity, options) {
+    this.customerBuild = (quantity, options) => {
     return `Building ${quantity}, ${this.model}, ${this. trim}, ${this.color} with the following options ${options}`
     }
   }
